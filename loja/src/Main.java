@@ -1,4 +1,5 @@
 import br.com.dp.imposto.CalculadoraDeImposto;
+import br.com.dp.imposto.TipoImposto;
 import br.com.dp.orcamento.Orcamento;
 
 import java.math.BigDecimal;
