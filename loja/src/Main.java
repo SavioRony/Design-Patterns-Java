@@ -1,6 +1,4 @@
 import br.com.dp.desconto.CalculadoraDeDescontos;
-import br.com.dp.imposto.CalculadoraDeImposto;
-import br.com.dp.imposto.ISS;
 import br.com.dp.orcamento.Orcamento;
 
 import java.math.BigDecimal;
