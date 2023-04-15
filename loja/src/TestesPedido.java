@@ -1,5 +1,6 @@
 import br.com.dp.orcamento.Orcamento;
 import br.com.dp.pedido.GeraPedido;
+import br.com.dp.pedido.GeraPedidoHandler;
 import br.com.dp.pedido.Pedido;
 
 import java.math.BigDecimal;
@@ -10,7 +11,7 @@ public class TestesPedido {
         String nomeCliente = "Ana Jose";
 
         GeraPedido geraPedido = new GeraPedido(nomeCliente, new BigDecimal("100"),2);
-        geraPedido.executar();
-
+        GeraPedidoHandler geraPedidoHandler = new GeraPedidoHandler();
+        geraPedidoHandler.executar(geraPedido);
     }
 }
