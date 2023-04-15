@@ -1,7 +1,7 @@
 package br.com.dp.orcamento;
 
-import br.com.dp.situacao.EmAnalise;
-import br.com.dp.situacao.SituacaoOrcamento;
+import br.com.dp.orcamento.situacao.EmAnalise;
+import br.com.dp.orcamento.situacao.SituacaoOrcamento;
 
 import java.math.BigDecimal;
 

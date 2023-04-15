@@ -1,4 +1,4 @@
-package br.com.dp.situacao;
+package br.com.dp.orcamento.situacao;
 
 import br.com.dp.exception.DomainException;
 import br.com.dp.orcamento.Orcamento;

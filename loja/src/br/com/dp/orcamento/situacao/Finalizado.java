@@ -1,4 +1,4 @@
-package br.com.dp.situacao;
+package br.com.dp.orcamento.situacao;
 
 public class Finalizado extends SituacaoOrcamento {
 
