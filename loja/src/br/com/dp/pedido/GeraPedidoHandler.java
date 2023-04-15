@@ -1,19 +1,25 @@
 package br.com.dp.pedido;
 
 import br.com.dp.orcamento.Orcamento;
+import br.com.dp.pedido.acao.AcaoAposGerarPedido;
+import br.com.dp.pedido.acao.EnviarEmailPedido;
+import br.com.dp.pedido.acao.SalvarPedidoNoBancoDeDados;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class GeraPedidoHandler {
+    private List<AcaoAposGerarPedido> acoes;
 
-    public GeraPedidoHandler(/*Dependecias: Repository, Service*/) {
+    public GeraPedidoHandler(List<AcaoAposGerarPedido> acoes) {
+        this.acoes = acoes;
     }
-
     public void executar(GeraPedido geraPedido){
         Orcamento orcamento = new Orcamento(geraPedido.getValorOrcamento(), geraPedido.getQuantidade());
         LocalDateTime date = LocalDateTime.now();
         Pedido pedido = new Pedido(geraPedido.getCliente(), date, orcamento);
-        System.out.println("Salvar Pedido no banco de dados!");
-        System.out.println("Enviar email com dados do novo pedido!");
+
+        acoes.forEach(a -> a.executarAcao(pedido));
+
     }
 }
