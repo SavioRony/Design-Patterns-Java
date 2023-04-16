@@ -1,5 +1,6 @@
 package br.com.dp.pedido;
 
+import br.com.dp.orcamento.ItemOrcamento;
 import br.com.dp.orcamento.Orcamento;
 import br.com.dp.pedido.acao.AcaoAposGerarPedido;
 import br.com.dp.pedido.acao.EnviarEmailPedido;
@@ -15,7 +16,10 @@ public class GeraPedidoHandler {
         this.acoes = acoes;
     }
     public void executar(GeraPedido geraPedido){
-        Orcamento orcamento = new Orcamento(geraPedido.getValorOrcamento(), geraPedido.getQuantidade());
+        Orcamento orcamento = new Orcamento();
+        for(int i = 0; i <= geraPedido.getQuantidade(); i++){
+            orcamento.adicionarItem(new ItemOrcamento(geraPedido.getValorOrcamento()));
+        }
         LocalDateTime date = LocalDateTime.now();
         Pedido pedido = new Pedido(geraPedido.getCliente(), date, orcamento);
 
