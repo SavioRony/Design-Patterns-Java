@@ -21,15 +21,15 @@ Design patterns são soluções comprovadas para problemas recorrentes no desenv
 
 ### Estruturais:
 
--Adapter: Converte a interface de uma classe em outra interface que o cliente espera. Permite que classes incompatíveis trabalhem juntas.
+- Adapter: Converte a interface de uma classe em outra interface que o cliente espera. Permite que classes incompatíveis trabalhem juntas.
 
--Decorator: Adiciona comportamentos e responsabilidades a um objeto de forma dinâmica, sem modificar sua estrutura subjacente.
+- Decorator: Adiciona comportamentos e responsabilidades a um objeto de forma dinâmica, sem modificar sua estrutura subjacente.
 
--Composite: Agrupa objetos em uma estrutura de árvore para representar hierarquias de partes e todo. Permite que os clientes tratem objetos individuais e composições de objetos de maneira uniforme.
+- Composite: Agrupa objetos em uma estrutura de árvore para representar hierarquias de partes e todo. Permite que os clientes tratem objetos individuais e composições de objetos de maneira uniforme.
 
--Facade: Fornecer uma interface simplificada para um conjunto de interfaces complexas em um subsistema. Oculta a complexidade do subsistema para o cliente.
+- Facade: Fornecer uma interface simplificada para um conjunto de interfaces complexas em um subsistema. Oculta a complexidade do subsistema para o cliente.
 
--Proxy: Fornece um substituto ou marcador de colocação para outro objeto para controlar o acesso a ele. Permite que você substitua um objeto complexo por um objeto simples que controla o acesso a ele.
+- Proxy: Fornece um substituto ou marcador de colocação para outro objeto para controlar o acesso a ele. Permite que você substitua um objeto complexo por um objeto simples que controla o acesso a ele.
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
