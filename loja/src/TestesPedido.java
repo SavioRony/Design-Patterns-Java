@@ -12,7 +12,6 @@ import java.util.Arrays;
 public class TestesPedido {
     public static void main(String[] args) {
         String nomeCliente = "Ana Jose";
-
         GeraPedido geraPedido = new GeraPedido(nomeCliente, new BigDecimal("100"),2);
         GeraPedidoHandler geraPedidoHandler = new GeraPedidoHandler(Arrays.asList(
                 new EnviarEmailPedido(),
